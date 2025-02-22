@@ -15,7 +15,7 @@ interface ObservableInterface {
     public boolean addObserver(Observer observer);
     public boolean removeObserver(Observer observer);
     public void notifyObservers(Event event);
-    public void notify(int observerIndex, Event event);1
+    public void notify(int observerIndex, Event event);
     public int getObserverIndex(Observer observer);
     public Observer[] toArray();
     public int getNextIndex();
