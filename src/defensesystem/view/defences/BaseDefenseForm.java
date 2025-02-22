@@ -83,19 +83,11 @@ public class BaseDefenseForm extends javax.swing.JFrame implements Observer {
         if (event.getChatText() != null) {   
             
             StyledDocument doc = generalChatTextPane.getStyledDocument();
-            
-//            int red = (int)(Math.random()*256);
-//            int green = (int)(Math.random()*256);
-//            int blue = (int)(Math.random()*256);
-//            
-//            Color color = new Color(red, green, blue);
+
 
             Color color = Color.CYAN;
 
             SimpleAttributeSet alignment = new SimpleAttributeSet();
-//            StyleConstants.setAlignment(alignment, event.getChatSender().equals(getTitle()) 
-//                    ? StyleConstants.ALIGN_RIGHT : StyleConstants.ALIGN_LEFT
-//            );
 
                StyleConstants.setAlignment(alignment, StyleConstants.ALIGN_JUSTIFIED);
             
@@ -113,7 +105,6 @@ public class BaseDefenseForm extends javax.swing.JFrame implements Observer {
             }
             
             doc.setParagraphAttributes(doc.getLength(), 1, alignment, false);
-           
 
         }
         

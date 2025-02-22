@@ -14,12 +14,13 @@ import java.util.ArrayList;
 interface ObservableInterface {
     public boolean addObserver(Observer observer);
     public boolean removeObserver(Observer observer);
+    public void notifyObservers(Event event);
+    public void notify(int observerIndex, Event event);1
     public int getObserverIndex(Observer observer);
     public Observer[] toArray();
     public int getNextIndex();
     public Observer getObserver(int index);
-    public void notifyObservers(Event event);
-    public void notify(int observerIndex, Event event);
+
     
 }
 
