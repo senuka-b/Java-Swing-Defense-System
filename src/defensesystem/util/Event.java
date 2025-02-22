@@ -17,7 +17,6 @@ public class Event {
     private String chatSender; 
     private String objective;
 
-    
 
     public static enum ChatTypeEnum {
         GENERAL, PRIVATE

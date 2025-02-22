@@ -386,20 +386,13 @@ public class MainControllerForm extends javax.swing.JFrame {
                 observable.notifyObservers(event);
             } 
  
-//            int red = (int)(Math.random()*256);
-//            int green = (int)(Math.random()*256);
-//            int blue = (int)(Math.random()*256);
-//            
-//            Color color = new Color(red, green, blue);
-//            
+
             Color color = Color.PINK;
 
             StyledDocument doc = generalChatTextPane.getStyledDocument();
 
             SimpleAttributeSet alignment = new SimpleAttributeSet();
-//            StyleConstants.setAlignment(alignment, event.getChatSender().equals("Main Control") 
-//                    ? StyleConstants.ALIGN_RIGHT : StyleConstants.ALIGN_LEFT
-//            );
+
             
             StyleConstants.setAlignment(alignment, StyleConstants.ALIGN_JUSTIFIED);
             
